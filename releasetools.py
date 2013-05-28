@@ -22,10 +22,6 @@
 
 """Custom OTA commands for jf"""
 
-#import common
-#import os
-#import shutil
-
 def FullOTA_InstallEnd(info):
   info.script.AppendExtra('package_extract_file("system/bin/loki.sh", "/tmp/loki.sh");')
   info.script.AppendExtra('package_extract_file("system/bin/loki_patch", "/tmp/loki_patch");')

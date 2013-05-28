@@ -19,10 +19,11 @@ if [ $? = 0 ];
        chmod 777 loki_patch
        dd if=/dev/block/platform/msm_sdcc.1/by-name/aboot of=aboot.img
        ./loki_patch boot aboot.img boot.img boot.lok
-#       dd if=boot.lok of=/dev/block/mmcblk0p20
         flash_image boot boot.lok
 # cleanup
        rm loki_patch
        rm *.img
        rm *.lok
+       rm /system/bin/loki.sh
+       rm /system/bin/loki_flash
 fi
