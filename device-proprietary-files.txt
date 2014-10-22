@@ -1,4 +1,6 @@
 # Add device specific blobs here
+lib/libril.so
+lib/libsec-ril.so
 
 # q6 firmware - ship so we can update APNHLOS and keep audio working
 etc/firmware/q6.b00
