@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_jfltevzw.mk
+    $(LOCAL_DIR)/full_jfltevzw.mk
